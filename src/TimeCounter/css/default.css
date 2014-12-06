@@ -39,3 +39,12 @@
         -ms-grid-row: 2;
         height: 100%;
     }
+
+    .navbar {
+        color:white;
+        background-color:#4ec9fb;
+        height: 90px;
+        position:absolute;
+        top:0;
+        width:100%;
+    }

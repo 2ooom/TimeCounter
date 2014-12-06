@@ -1,0 +1,1 @@
+angular.module('countdown.task', ['ngStorage'])

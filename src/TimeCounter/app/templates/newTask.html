@@ -1,0 +1,30 @@
+<ion-view title="Create new Task">
+  <ion-content class="has-header">
+    <label class="item item-input">
+    	<input type="text" placeholder="Task Name" ng-model="task.name">
+  	</label>
+  	<ul clas="list">
+		<li class="item item-toggle">
+			Starts Immidiately
+			<label class="toggle">
+			  <input type="checkbox" ng-model="task.immidiate">
+			  <div class="track">
+			    <div class="handle"></div>
+			  </div>
+			</label>
+		</li>
+	</ul>
+	<label class="item item-input" ng-hide="task.immidiate">
+		<span class="input-label">Start Date</span>
+		<input type="date" ng-model="task.startdate">
+	</label>
+	<label class="item item-input">
+		<span class="input-label">End Date</span>
+		<input type="date" ng-model="task.enddate">
+	</label>
+  </ion-content>
+	<div class="bar bar-footer bar-light">
+	  <a class="button icon-left ion-chevron-left button-clear button-dark" href="#/app/tasks">Back</a>
+	  <a class="button icon-right ion-compose button-clear button-dark" ng-click="vm.save()">Create</a>
+	</div>	
+</ion-view>
