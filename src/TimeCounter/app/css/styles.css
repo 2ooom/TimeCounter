@@ -1,9 +1,41 @@
-.menu-icon {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC") no-repeat scroll center center transparent;
-  display: block;
-  height: 40px;
-  left: 10px;
-  position: absolute;
+.page-content {
+  margin-top: 100px;
+}
+.header.mm-fixed-top {
+  left: 0;
+  position: fixed;
   top: 0;
-  width: 40px;
+}
+.mm-slideout {
+  transition: transform 0.4s ease 0s;
+}
+.header {
+  background-color: #4ec9fb;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 44px;
+  height: 90px;
+  line-height: 90px;
+  padding: 0 50px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu-icon {
+  background: url("../img/menu-icon.png") no-repeat scroll center center transparent;
+  display: block;
+  height: 53px;
+  width: 80px;
+  left: 30px;
+  top: 19px;
+  position: absolute;
+}
+.add-icon {
+  background: url("../img/app-icon.png") no-repeat scroll center center transparent;
+  display: block;
+  height: 67px;
+  width: 67px;
+  right: 30px;
+  top: 12px;
+  position: absolute;
 }

@@ -56,6 +56,17 @@
     <Content Include=".bowerrc" />
     <Content Include="app\css\styles.css" />
     <Content Include="app\css\styles.less" />
+    <Content Include="app\css\task-bootsrap.css" />
+    <Content Include="app\css\task-bootsrap.less" />
+    <Content Include="app\css\task-bootstrap-variables.less" />
+    <Content Include="app\fonts\OpenSans-Bold.ttf" />
+    <Content Include="app\fonts\OpenSans-BoldItalic.ttf" />
+    <Content Include="app\fonts\OpenSans-Italic.ttf" />
+    <Content Include="app\fonts\OpenSans-Light.ttf" />
+    <Content Include="app\fonts\OpenSans-LightItalic.ttf" />
+    <Content Include="app\fonts\OpenSans-Regular.ttf" />
+    <Content Include="app\fonts\OpenSans-Regular.woff" />
+    <Content Include="app\img\menu-icon.png" />
     <Content Include="app\index.html" />
     <Content Include="app\js\app.js" />
     <Content Include="app\js\newTaskCtrl.js" />
@@ -444,6 +455,7 @@
     <Content Include="css\ui-themed.css" />
     <Content Include="css\ui-themed.theme-dark.css" />
     <Content Include="css\ui-themed.theme-light.css" />
+    <Content Include="gulpfile.js" />
     <Content Include="images\Square150x150Logo.scale-240.png" />
     <Content Include="images\Square44x44Logo.scale-240.png" />
     <Content Include="images\Wide310x150Logo.scale-240.png" />
@@ -460,9 +472,6 @@
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.Phone.WinJS.2.1, Version=1.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\img\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\lib\ui-router\api\angular-ui-router.d.ts" />

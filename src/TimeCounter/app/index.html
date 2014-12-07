@@ -6,7 +6,7 @@
     <title>TimeCounter</title>
 
 
-    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/task-bootsrap.css" rel="stylesheet">
     <link href="lib/jQuery.mmenu/src/css/jquery.mmenu.all.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
@@ -35,15 +35,12 @@
         </ul>
     </div>
     <div>
-        <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="header mm-fixed-top mm-slideout">
-                    <a class="menu-icon" href="#menu"></a>
-                    <span>Tasks</span>
-                </div>
-            </div>
-        </nav>
-        <div class="container" ui-view></div>
+        <div class="header mm-fixed-top mm-slideout">
+            <a class="menu-icon" href="#menu"></a>
+            <span>Tasks</span>
+            <a class="add-icon" href="#/newtask"></a>
+        </div>
+        <div class="container page-content" ui-view></div>
     </div>
 </body>
 </html>
