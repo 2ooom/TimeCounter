@@ -6,11 +6,14 @@
     <title>TimeCounter</title>
 
 
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/jQuery.mmenu/src/css/jquery.mmenu.all.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- ionic/angularjs js -->
     <script src="lib/winstore-jscompat/winstore-jscompat.js"></script>
     <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/jQuery.mmenu/src/js/jquery.mmenu.min.all.js"></script>
     <script src="lib/angular/angular.js"></script>
     <script src="lib/ui-router/release/angular-ui-router.js"></script>
     <script src="lib/ngstorage/ngStorage.min.js"></script>
@@ -23,6 +26,24 @@
 </head>
 
 <body ng-app="countdown">
-<div ui-view></div>
+    <div id="menu">
+        <ul>
+            <li><a s-href="#/tasks">Tasks</a></li>
+            <li><a s-href="#/calendar">Calendar</a></li>
+            <li><a s-href="#/notifications">Notifications</a></li>
+            <li><a s-href="#/statistics">Statistics</a></li>
+        </ul>
+    </div>
+    <div>
+        <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="header mm-fixed-top mm-slideout">
+                    <a class="menu-icon" href="#menu"></a>
+                    <span>Tasks</span>
+                </div>
+            </div>
+        </nav>
+        <div class="container" ui-view></div>
+    </div>
 </body>
 </html>

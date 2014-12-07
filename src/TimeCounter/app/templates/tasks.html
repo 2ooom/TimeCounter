@@ -1,16 +1,18 @@
 <div title="Tasks">
-  <ion-nav-buttons side="left">
-    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-  </ion-nav-buttons>
-  <ion-nav-buttons side="right">
-    <a class="button button-icon icon ion-plus-circled" href="#/app/newtask"></a>
-  </ion-nav-buttons>
-  <ion-content class="has-header">
-    <ion-list>
-      <ion-item ng-repeat="task in tasks" href="#/app/task/{{task.id}}" class="item-icon-right">
-        <span ng-bind="task.name"></span>
-        <i class="icon ion-clock" ng-click="vm.save()"></i>
-      </ion-item>
-    </ion-list>
-  </ion-content>
+    <div ng-repeat="task in tasks" class="panel panel-default">
+        <div class="panel-heading" ng-bid="task.name"></div>
+        <div class="panel-body">
+            <div class="col-xs-10">
+                <div class="row">
+                    4h 45m
+                </div>
+                <div class="row">
+                    <span class="">Dec 01 5:00</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                
+            </div>
+        </div>
+    </div>
 </div>

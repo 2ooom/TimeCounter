@@ -1,4 +1,7 @@
 angular.module('countdown', ['ui.router', 'ngStorage'])
+    .run(function () {
+        $('#menu').mmenu();
+    })
 
 
 .config(function($stateProvider, $urlRouterProvider) {
