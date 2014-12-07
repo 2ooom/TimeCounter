@@ -107,7 +107,13 @@
             }
             cleanseAttributes(cleaner.documentElement);
 
-            return Array.prototype.slice.call(document.adoptNode(cleaner.documentElement).childNodes);
+            var docElement = cleaner.documentElement.childNodes[1];
+
+            if (docElement == null) {
+                docElement = cleaner.documentElement;
+            }
+
+            return Array.prototype.slice.call(document.adoptNode(docElement).childNodes);
         }
 
         function cleansePropertySetter(property, setter) {

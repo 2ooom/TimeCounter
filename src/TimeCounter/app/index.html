@@ -21,7 +21,9 @@
     <script src="lib/ui-router/release/angular-ui-router.js"></script>
     <script src="lib/ngstorage/ngStorage.min.js"></script>
     <script src="lib/angular-native-picker/build/angular-datepicker.js"></script>
-
+    <!--<script>
+        $(function() { $('#menu').mmenu() });
+    </script>-->
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/directives.js"></script>
@@ -42,7 +44,7 @@
 <div>
     <div class="header">
         <a class="menu-icon" href="#menu"></a>
-        <span id="page-title">Tasks</span>
+        <span class="page-title">Tasks</span>
         <a class="add-icon" href="#/newtask"></a>
     </div>
     <div class="container page-content" ui-view></div>
