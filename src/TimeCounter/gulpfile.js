@@ -22,8 +22,8 @@ gulp.task('base64', function () {
         .pipe(gulp.dest('./app/css'));
 });
 
-gulp.task('default', ['less', 'base64']);
+gulp.task('default', ['less']);
 
 gulp.task('watch', function() {
-  gulp.watch(paths.less, ['less', 'base64']);
+  gulp.watch(paths.less, ['less']);
 });
