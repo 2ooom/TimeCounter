@@ -1,0 +1,24 @@
+{
+  "name": "TimeCounter",
+  "version": "1.0.0",
+  "description": "Windows Phone 8 App in HTML/JS",
+  "main": "app/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2ooom/TimeCounter.git"
+  },
+  "keywords": [
+    "windowsphone",
+    "html",
+    "js"
+  ],
+  "author": "2ooom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2ooom/TimeCounter/issues"
+  },
+  "homepage": "https://github.com/2ooom/TimeCounter"
+}
