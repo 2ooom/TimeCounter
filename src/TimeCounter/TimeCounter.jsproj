@@ -66,6 +66,7 @@
     <Content Include="app\fonts\OpenSans-LightItalic.ttf" />
     <Content Include="app\fonts\OpenSans-Regular.ttf" />
     <Content Include="app\fonts\OpenSans-Regular.woff" />
+    <Content Include="app\img\app-icon.png" />
     <Content Include="app\img\menu-icon.png" />
     <Content Include="app\index.html" />
     <Content Include="app\js\app.js" />

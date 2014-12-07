@@ -2,13 +2,18 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>TimeCounter</title>
 
 
     <link href="css/task-bootsrap.css" rel="stylesheet">
     <link href="lib/jQuery.mmenu/src/css/jquery.mmenu.all.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        @-ms-viewport {
+            height: 980px;
+            width: 640px;
+        }
+    </style>
 
     <!-- ionic/angularjs js -->
     <script src="lib/winstore-jscompat/winstore-jscompat.js"></script>
@@ -26,21 +31,21 @@
 </head>
 
 <body ng-app="countdown">
-    <div id="menu">
-        <ul>
-            <li><a s-href="#/tasks">Tasks</a></li>
-            <li><a s-href="#/calendar">Calendar</a></li>
-            <li><a s-href="#/notifications">Notifications</a></li>
-            <li><a s-href="#/statistics">Statistics</a></li>
-        </ul>
+<div id="menu">
+    <ul>
+        <li><a ui-sref="tasks">Tasks</a></li>
+        <li><a ui-shref="calendar">Calendar</a></li>
+        <li><a ui-shref="notifications">Notifications</a></li>
+        <li><a ui-shref="statistics">Statistics</a></li>
+    </ul>
+</div>
+<div>
+    <div class="header">
+        <a class="menu-icon" href="#menu"></a>
+        <span>Tasks</span>
+        <a class="add-icon" href="#/newtask"></a>
     </div>
-    <div>
-        <div class="header mm-fixed-top mm-slideout">
-            <a class="menu-icon" href="#menu"></a>
-            <span>Tasks</span>
-            <a class="add-icon" href="#/newtask"></a>
-        </div>
-        <div class="container page-content" ui-view></div>
-    </div>
+    <div class="container page-content" ui-view></div>
+</div>
 </body>
 </html>
