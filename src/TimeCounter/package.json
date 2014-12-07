@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/2ooom/TimeCounter/issues"
   },
-  "homepage": "https://github.com/2ooom/TimeCounter"
+  "homepage": "https://github.com/2ooom/TimeCounter",
+  "devDependencies": {
+    "gulp": "^3.8.10"
+  }
 }

@@ -53,9 +53,13 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="app\css\style.css" />
-    <Content Include="app\img\ionic.png" />
+    <Content Include=".bowerrc" />
+    <Content Include="app\css\styles.css" />
+    <Content Include="app\css\styles.less" />
     <Content Include="app\index.html" />
+    <Content Include="app\index.min.html">
+      <DependentUpon>index.html</DependentUpon>
+    </Content>
     <Content Include="app\js\app.js" />
     <Content Include="app\js\newTaskCtrl.js" />
     <Content Include="app\js\taskListCtrl.js" />
@@ -68,13 +72,6 @@
     <Content Include="app\lib\angular-animate\bower.json" />
     <Content Include="app\lib\angular-animate\package.json" />
     <Content Include="app\lib\angular-animate\README.md" />
-    <Content Include="app\lib\angular-sanitize\.bower.json" />
-    <Content Include="app\lib\angular-sanitize\angular-sanitize.js" />
-    <Content Include="app\lib\angular-sanitize\angular-sanitize.min.js" />
-    <Content Include="app\lib\angular-sanitize\angular-sanitize.min.js.map" />
-    <Content Include="app\lib\angular-sanitize\bower.json" />
-    <Content Include="app\lib\angular-sanitize\package.json" />
-    <Content Include="app\lib\angular-sanitize\README.md" />
     <Content Include="app\lib\angular\.bower.json" />
     <Content Include="app\lib\angular\angular-csp.css" />
     <Content Include="app\lib\angular\angular.js" />
@@ -84,6 +81,121 @@
     <Content Include="app\lib\angular\bower.json" />
     <Content Include="app\lib\angular\package.json" />
     <Content Include="app\lib\angular\README.md" />
+    <Content Include="app\lib\bootstrap\.bower.json" />
+    <Content Include="app\lib\bootstrap\bower.json" />
+    <Content Include="app\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="app\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="app\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="app\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="app\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="app\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="app\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="app\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="app\lib\bootstrap\dist\js\npm.js" />
+    <Content Include="app\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\lib\bootstrap\Gruntfile.js" />
+    <Content Include="app\lib\bootstrap\grunt\.jshintrc" />
+    <Content Include="app\lib\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="app\lib\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="app\lib\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="app\lib\bootstrap\grunt\configBridge.json" />
+    <Content Include="app\lib\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="app\lib\bootstrap\js\.jscsrc" />
+    <Content Include="app\lib\bootstrap\js\.jshintrc" />
+    <Content Include="app\lib\bootstrap\js\affix.js" />
+    <Content Include="app\lib\bootstrap\js\alert.js" />
+    <Content Include="app\lib\bootstrap\js\button.js" />
+    <Content Include="app\lib\bootstrap\js\carousel.js" />
+    <Content Include="app\lib\bootstrap\js\collapse.js" />
+    <Content Include="app\lib\bootstrap\js\dropdown.js" />
+    <Content Include="app\lib\bootstrap\js\modal.js" />
+    <Content Include="app\lib\bootstrap\js\popover.js" />
+    <Content Include="app\lib\bootstrap\js\scrollspy.js" />
+    <Content Include="app\lib\bootstrap\js\tab.js" />
+    <Content Include="app\lib\bootstrap\js\tooltip.js" />
+    <Content Include="app\lib\bootstrap\js\transition.js" />
+    <Content Include="app\lib\bootstrap\less\.csscomb.json" />
+    <Content Include="app\lib\bootstrap\less\.csslintrc" />
+    <Content Include="app\lib\bootstrap\less\alerts.less" />
+    <Content Include="app\lib\bootstrap\less\badges.less" />
+    <Content Include="app\lib\bootstrap\less\bootstrap.less" />
+    <Content Include="app\lib\bootstrap\less\breadcrumbs.less" />
+    <Content Include="app\lib\bootstrap\less\button-groups.less" />
+    <Content Include="app\lib\bootstrap\less\buttons.less" />
+    <Content Include="app\lib\bootstrap\less\carousel.less" />
+    <Content Include="app\lib\bootstrap\less\close.less" />
+    <Content Include="app\lib\bootstrap\less\code.less" />
+    <Content Include="app\lib\bootstrap\less\component-animations.less" />
+    <Content Include="app\lib\bootstrap\less\dropdowns.less" />
+    <Content Include="app\lib\bootstrap\less\forms.less" />
+    <Content Include="app\lib\bootstrap\less\glyphicons.less" />
+    <Content Include="app\lib\bootstrap\less\grid.less" />
+    <Content Include="app\lib\bootstrap\less\input-groups.less" />
+    <Content Include="app\lib\bootstrap\less\jumbotron.less" />
+    <Content Include="app\lib\bootstrap\less\labels.less" />
+    <Content Include="app\lib\bootstrap\less\list-group.less" />
+    <Content Include="app\lib\bootstrap\less\media.less" />
+    <Content Include="app\lib\bootstrap\less\mixins.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\alerts.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\buttons.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\center-block.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\forms.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\gradients.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\grid.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\image.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\labels.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\list-group.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\opacity.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\pagination.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\panels.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\resize.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\size.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\table-row.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="app\lib\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="app\lib\bootstrap\less\modals.less" />
+    <Content Include="app\lib\bootstrap\less\navbar.less" />
+    <Content Include="app\lib\bootstrap\less\navs.less" />
+    <Content Include="app\lib\bootstrap\less\normalize.less" />
+    <Content Include="app\lib\bootstrap\less\pager.less" />
+    <Content Include="app\lib\bootstrap\less\pagination.less" />
+    <Content Include="app\lib\bootstrap\less\panels.less" />
+    <Content Include="app\lib\bootstrap\less\popovers.less" />
+    <Content Include="app\lib\bootstrap\less\print.less" />
+    <Content Include="app\lib\bootstrap\less\progress-bars.less" />
+    <Content Include="app\lib\bootstrap\less\responsive-embed.less" />
+    <Content Include="app\lib\bootstrap\less\responsive-utilities.less" />
+    <Content Include="app\lib\bootstrap\less\scaffolding.less" />
+    <Content Include="app\lib\bootstrap\less\tables.less" />
+    <Content Include="app\lib\bootstrap\less\theme.less" />
+    <Content Include="app\lib\bootstrap\less\thumbnails.less" />
+    <Content Include="app\lib\bootstrap\less\tooltip.less" />
+    <Content Include="app\lib\bootstrap\less\type.less" />
+    <Content Include="app\lib\bootstrap\less\utilities.less" />
+    <Content Include="app\lib\bootstrap\less\variables.less" />
+    <Content Include="app\lib\bootstrap\less\wells.less" />
+    <Content Include="app\lib\bootstrap\LICENSE" />
+    <Content Include="app\lib\bootstrap\package.json" />
+    <Content Include="app\lib\bootstrap\README.md" />
     <Content Include="app\lib\jquery\.bower.json" />
     <Content Include="app\lib\jquery\bower.json" />
     <Content Include="app\lib\jquery\dist\jquery.js" />
@@ -209,6 +321,7 @@
     <Content Include="app\lib\winstore-jscompat\winstore-jscompat.js" />
     <Content Include="app\templates\newTask.html" />
     <Content Include="app\templates\tasks.html" />
+    <Content Include="bower.json" />
     <Content Include="css\default.css" />
     <Content Include="css\ui-themed.css" />
     <Content Include="css\ui-themed.theme-dark.css" />
@@ -221,6 +334,7 @@
     <Content Include="images\StoreLogo.scale-240.png" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
+    <Content Include="package.json" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
@@ -228,6 +342,9 @@
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.Phone.WinJS.2.1, Version=1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\img\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\lib\ui-router\api\angular-ui-router.d.ts" />
