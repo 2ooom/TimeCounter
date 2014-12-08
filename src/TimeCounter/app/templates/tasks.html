@@ -1,17 +1,21 @@
 <div page-title="Tasks">
-    <div class="panel panel-default">
-        <div class="panel-heading" ng-bid="task.name"></div>
+    <div ng-repeat="task in tasks" class="panel panel-default">
+        <div class="panel-heading" ng-bind="task.name"></div>
         <div class="panel-body">
             <div class="col-xs-10">
                 <div class="row countdown">
-                    <span class="countdown-hour">4h</span> 45m
+                    <timer end-time="task.endDate">
+                        <span class="countdown-hour">{{days}}d {{hours}}h</span> {{minutes}}m {{seconds}}s
+                    </timer>
                 </div>
                 <div class="row due-date">
-                    <span class="">Dec 01 5:00</span>
+                    <span ng-bind="task.endDate | date: 'd MMM H:mm'"></span>
                 </div>
             </div>
             <div class="col-xs-2">
-                
+                <div class="row">
+                    <!--<canvas id="doughnut" data="data" width="150" height="150" class="chart chart-doughnut"></canvas> -->
+                </div>
             </div>
         </div>
     </div>

@@ -1,5 +1,6 @@
 angular.module('countdown')
-.service('taskService', ['$localStorage', function($localStorage) {
+.service('taskService', ['$localStorage', function ($localStorage) {
+    //$localStorage.reset();
 	return {
 	  getAll : function() {
 	  	return $localStorage.Tasks;

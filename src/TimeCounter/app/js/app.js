@@ -1,4 +1,4 @@
-angular.module('countdown', ['ui.router', 'ngStorage', 'angular-datepicker'])
+angular.module('countdown', ['ui.router', 'ngStorage', 'angular-datepicker', 'timer', 'chart.js'])
     .run(function () {
         $('#menu').mmenu();
     })
