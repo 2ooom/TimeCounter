@@ -8,13 +8,12 @@ angular.module('countdown')
         return passedTime / fulltime * 100;
 
     }
-    $scope.data = [
-          300, 500
+
+    $scope.labels = [
+          'done', 'not done'
     ];
     $scope.getChartModel = function (task) {
         var percentage = getPercentage(task);
-        return [
-            { value: percentage, color: '#F7464A' },
-        ];
+        return [percentage, 100 - percentage];
     }
 }]);
